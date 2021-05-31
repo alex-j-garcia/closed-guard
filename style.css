@@ -1,3 +1,31 @@
+/* || Typography */
+/* Regular Font */
+@font-face {
+  font-family: 'aller';
+  src: url('/assets/fonts/aller/aller_rg-webfont.woff2') format('woff2'),
+       url('/assets/fonts/aller/aller_rg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold Font */
+@font-face {
+  font-family: 'aller';
+  src: url('/assets/fonts/aller/aller_bd-webfont.woff2') format('woff2'),
+       url('/assets/fonts/aller/aller_bd-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Italic Font */
+@font-face {
+  font-family: 'aller';
+  src: url('/assets/fonts/aller/aller_it-webfont.woff2') format('woff2'),
+       url('/assets/fonts/aller/aller_it-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
 /* || General Styles */
 :root {
   /* Display & Box Model */
@@ -5,6 +33,7 @@
 
   /* Other */
   font-size: 62.5%;
+  font-family: 'aller', Verdana, sans-serif;
 }
 
 *,
