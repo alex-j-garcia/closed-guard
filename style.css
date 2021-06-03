@@ -34,6 +34,9 @@
   /* Other */
   font-size: 62.5%;
   font-family: 'aller', Verdana, sans-serif;
+
+  /* CSS Variables */
+  --text-color: hsl(0, 0%, 15%);
 }
 
 *,
@@ -92,7 +95,38 @@ header {
 
 main {
   /* Display & Box Model */
-  margin-top: 35px;
+  margin: 35px auto 0; /* Prevents fixed header overlay */
+  width: 93%;
+
+  /* Other */
+  font-size: 1.4rem;
+}
+
+h1 {
+  letter-spacing: -0.1rem;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
+h1:hover {
+  letter-spacing: -0.3rem;
+  /* transition-property: letter-spacing;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1); */
+  transition: letter-spacing 500ms cubic-bezier(0.65, 0.05, 0.36, 1) 0s;
+  cursor: default;
+}
+
+main > div,
+main > p {
+  margin-top: 3rem;
+}
+
+main p {
+  letter-spacing: .05rem;
+  line-height: 1.5;
+  color: var(--text-color);
 }
 
 /* || Utilities */
