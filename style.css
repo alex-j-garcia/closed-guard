@@ -36,8 +36,9 @@
   font-family: 'aller', Verdana, sans-serif;
 
   /* CSS Variables */
-  --text-color: hsl(0, 0%, 82%);
-  --body-color: hsl(0, 0%, 19%);
+  --text-color: hsla(0, 0%, 82%, 1);
+  --body-color: hsla(0, 1%, 11%, 1);
+  --header-color: hsla(0, 0%, 17%, 1);
 }
 
 *,
@@ -64,10 +65,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 25px;
+  height: 35px;
 
   /* Other */
-  background-color: var(--body-color);
+  background-color: var(--header-color);
+  box-shadow: 0 10px 10px -9px hsla(0, 0%, 0%, 0.4);
+  /* box-shadow: 0 0 20px 0; */
 }
 
 .mainNav {
@@ -85,13 +88,13 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 5px;
+  padding: 10px 15px;
 }
 
 .hamburger > div {
   /* Display & Box Model */
   margin: 3px 0;
-  width: 15px;
+  width: 20px;
   height: 2px;
 
   /* Other */
@@ -100,7 +103,7 @@ header {
 
 main {
   /* Display & Box Model */
-  margin: 35px auto 0; /* Prevents fixed header overlay */
+  margin: 55px auto; /* Prevents fixed header overlay */
   width: 90%;
 
   /* Other */
