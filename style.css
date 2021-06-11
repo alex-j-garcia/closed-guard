@@ -177,3 +177,20 @@ a:active {
   /* Other */
   list-style-type: none;
 }
+
+/* || Footer */
+footer {
+  background-color: var(--header-color);
+  padding: 3rem;
+}
+
+footer a:link,
+footer a:visited {
+  border-bottom: none;
+  color: hsl(212, 27%, 75%);
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
